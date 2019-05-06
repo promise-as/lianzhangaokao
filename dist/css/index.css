@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* author: yzp */
+html {
+  font-size: 75px;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p, h3, h1, h2, h4, h5 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a, button, input {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  padding: 0;
+}
+
+i {
+  font-style: normal;
+}
+
+input[type='submit'], select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select {
+  background-size: 0.25333rem 0.13333rem;
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 10rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 1.30667rem;
+  position: relative;
+}
+
+.wrap .bottom {
+  height: 6.4rem;
+  width: 100%;
+  background: #000;
+  position: fixed;
+  bottom: 0;
+}
+
+.wrap {
+  background: #f0f0f0;
+}
+
+i {
+  display: block;
+}
+
+strong {
+  font-style: normal;
+}
+
+.banner {
+  height: 6.86667rem;
+  width: 100%;
+  background: url("../images/banner_red.png") no-repeat center;
+  padding: 0.61333rem 0.66667rem;
+}
+
+.banner h1 {
+  width: 2.16rem;
+  height: 0.66667rem;
+  text-indent: -9999px;
+}
+
+/*省份*/
+.province {
+  width: 100%;
+  height: 12.86667rem;
+  background: #FFFFFF;
+  padding: 0 0.33333rem;
+  /*简介*/
+}
+
+.province .intro {
+  width: 100%;
+  height: 3.24rem;
+  background: url("../images/intro.png") no-repeat center;
+  padding: 0.21333rem 0.48rem;
+  font-size: 0.32rem;
+  color: #FFFFFF;
+  line-height: 0.56rem;
+  margin-top: -0.30667rem;
+}
+
+.province .intro p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+.province .title {
+  border: 1px solid #cccccc;
+  margin-top: 0.74667rem;
+}
+
+.province .title .title-icon {
+  width: 0.50667rem;
+  height: 0.45333rem;
+  background: url("../images/arrows_red.png") no-repeat center;
+  display: inline-block;
+}
+
+.province .title .text {
+  font-size: 0.48rem;
+  font-weight: bold;
+  color: #444444;
+  display: inline-block;
+}
+
+.province .title .text strong {
+  color: #f97f55;
+}
+
+.province .title .area {
+  width: 2.13333rem;
+  height: 0.86667rem;
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 0.12rem 0.21333rem 0.08rem 0.21333rem;
+}
+
+.province .title .area .icon {
+  width: 0.32rem;
+  height: 0.42667rem;
+  background: url("../images/area.png") no-repeat center;
+  float: left;
+}
+
+.province .title .area span {
+  font-size: 0.32rem;
+  color: #ff7241;
+  float: left;
+  line-height: 0.42667rem;
+}
