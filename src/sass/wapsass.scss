@@ -99,13 +99,14 @@ select {
   max-width: pr(750px);
   margin: 0 auto;
   overflow: hidden;
-  padding-bottom: pr(98px);
+  //padding-bottom: pr(98px);
+  padding-bottom: pr(120px);
   position: relative;
   .bottom {
-    height: pr(480px);
-    width: 100%;
-    background: #000;
-    position: fixed;
-    bottom: 0
+    //height: pr(480px);
+    //width: 100%;
+    //background: #000;
+    //position: fixed;
+    //bottom: 0;
   }
 }

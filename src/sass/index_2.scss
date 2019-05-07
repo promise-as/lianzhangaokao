@@ -1,0 +1,279 @@
+@import "wapsass.scss";
+
+.wrap{
+  background: #f0f0f0;
+}
+
+i, a{
+  display: block;
+}
+
+strong{
+  font-style: normal;
+}
+
+.header{
+  background: #4077d9;
+  h1{
+    //width: pr(162px);
+    //height: pr(50px);
+    //border: 1px solid #cccccc;
+
+    padding: pr(24px) 0;
+    .logo{
+      //border: 1px solid #000;
+      width: pr(162px);
+      height: pr(50px);
+      margin-left: auto;
+      margin-right: auto;
+      background: url("../images/02/logo.png") no-repeat center;
+      text-indent: -9999px;
+    }
+  }
+}
+
+.banner {
+  height: pr(508px);
+  width: 100%;
+  background: url("../images/02/banner.png") no-repeat center;
+  //border: 1px solid #000;
+}
+
+/*省份*/
+.province{
+  width: 100%;
+  //height: pr(965px);
+  background: #FFFFFF;
+  //border: 1px solid blue;
+  padding: 0 pr(25px);
+  //margin-bottom: pr(25px);
+  /*简介*/
+  .intro{
+    width: 100%;
+    height: pr(243px);
+    background: url("../images/02/intro.png") no-repeat center;
+    padding: pr(16px) pr(26px);
+    font-size: pr(24px);
+    color: #FFFFFF;
+    line-height: pr(42px);
+    margin-top: pr(-23px);
+    p{
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      overflow: hidden;
+    }
+  }
+  /*批数*/
+  .batches{
+    display: grid;
+    grid-template-columns: repeat(4, pr(165px));
+    grid-row-gap: 20px;
+    grid-column-gap: 16px;
+    text-align: center;
+    margin: pr(42px) 0 pr(80px) 0;
+    .batch{
+      font-size: pr(30px);
+      color: #444444;
+      border: 1px solid #427be0;
+      line-height: pr(60px);
+      border-radius: pr(30px);
+
+      &:hover{
+        background: #427be0;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .title{
+    //border: 1px solid #cccccc;
+    margin-top: pr(56px);
+    text-align: center;
+    .left-icon{
+      width: pr(40px);
+      height: pr(33px);
+      background: url("../images/02/title_left.png") no-repeat center;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .text{
+      font-size: pr(34px);
+      font-weight: bold;
+      color: #333333;
+      display: inline-block;
+      line-height: pr(67px);
+    }
+    .right-icon{
+      width: pr(40px);
+      height: pr(32px);
+      background: url("../images/02/title_right.png") no-repeat center;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.tables{
+  background: #FFFFFF;
+  padding: pr(44px) pr(25px);
+  margin-bottom: pr(425px);
+  .table{
+    //padding-top: pr(55px);
+    font-size: pr(26px);
+    line-height: pr(68px);
+    //border: 1px solid #427be0;
+    //border-radius: pr(10px);
+    .th{
+      width: 100%;
+      color: #FFFFFF;
+      //background: #ff7d4f;
+      text-align: center;
+      .td{
+        width: 25%;
+        float: left;
+        background: #427be0;
+        &:first-child{
+          border-top-left-radius: pr(10px);
+        }
+        &:nth-of-type(even){
+          background: #578ae5;
+        }
+        &:last-child{
+          border-top-right-radius: pr(10px);
+        }
+      }
+    }
+    .tr{
+      color: #444444;
+      font-size: pr(24px);
+      text-align: center;
+      border-left: 1px solid #427be0;
+      border-right: 1px solid #427be0;
+      border-bottom: 1px solid #427be0;
+      .td{
+        width: 25%;
+        float: left;
+        background: #FFFFFF;
+        &:nth-of-type(odd){
+          background: #dde9ff;
+        }
+      }
+    }
+  }
+}
+
+/*高考工具箱*/
+.kit{
+  width: 100%;
+  //height: pr(400px);
+  //border: 1px solid blue;
+  background: #FFFFFF;
+  padding: pr(10px) 0 0 0;
+  position: fixed;
+  bottom: 0;
+  .kit-content{
+    padding: 0 pr(25px);
+    .cont-left{
+      float: left;
+      .title{
+        //border: 1px solid #cccccc;
+        //margin-top: pr(56px);
+        .title-icon{
+          width: pr(40px);
+          height: pr(33px);
+          background: url("../images/02/title_left.png") no-repeat center;
+          float: left;
+          margin-top: 16px;
+        }
+        .text{
+          font-size: pr(36px);
+          font-weight: bold;
+          color: #444444;
+          float: left;
+          line-height: pr(67px);
+        }
+      }
+      .kit-detail{
+        //border: 1px solid #cccccc;
+        margin-top: pr(28px);
+        .detail-item{
+          width: pr(150px);
+          border-right: 1px solid #dddddd;
+          float: left;
+          text-align: center;
+          .icon{
+            width: pr(66px);
+            height: pr(66px);
+            background: url("../images/02/kit_cont_1.png") no-repeat center;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          span{
+            color: #444444;
+            font-size: pr(26px);
+          }
+          &:nth-of-type(2){
+            .icon{
+              background: url("../images/02/kit_cont_2.png") no-repeat center;
+            }
+          }
+          &:nth-of-type(3){
+            .icon{
+              background: url("../images/02/kit_cont_3.png") no-repeat center;
+            }
+          }
+          &:last-child{
+            border-right: none;
+          }
+        }
+      }
+    }
+    .QR-code{
+      float: right;
+      width: pr(153px);
+      height: pr(251px);
+      background: url("../images/02/QR_code.png") no-repeat center;
+      margin-right: pr(-10px);
+      padding: 0 pr(12px);
+      .wechat{
+        width: pr(128px);
+        height: pr(128px);
+        background: url("../images/01/wechat.png") no-repeat center;
+        margin-top: pr(82px);
+      }
+    }
+  }
+  .nav{
+    //border: 1px solid #000;
+    padding: 0 pr(25px);
+    margin: pr(10px) 0;
+    display: grid;
+    grid-template-columns: repeat(3, pr(212px));
+    grid-row-gap: 20px;
+    grid-column-gap: 28px;
+    .nav-item{
+      width: pr(212px);
+      line-height: pr(50px);
+      font-size: pr(26px);
+      color: #444444;
+      background: #dde9ff;
+      text-align: center;
+      border-radius: pr(6px);
+    }
+  }
+}
+
+.footer{
+  height: pr(120px);
+  background: #2e2e2e;
+  text-align: center;
+  font-size: pr(22px);
+  color: #888888;
+  line-height: pr(38px);
+  padding: pr(22px) 0;
+
+  display: none;
+  margin-top: pr(20px);
+}
+

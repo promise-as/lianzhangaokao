@@ -1,0 +1,404 @@
+@charset "UTF-8";
+/* author: yzp */
+html {
+  font-size: 75px;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p, h3, h1, h2, h4, h5 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a, button, input {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  padding: 0;
+}
+
+i {
+  font-style: normal;
+}
+
+input[type='submit'], select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select {
+  background-size: 0.25333rem 0.13333rem;
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 10rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 1.6rem;
+  position: relative;
+}
+
+.wrap {
+  background: #f0f0f0;
+}
+
+i, a {
+  display: block;
+}
+
+strong {
+  font-style: normal;
+}
+
+.banner {
+  height: 8.05333rem;
+  width: 100%;
+  background: url("../images/03/banner.png") no-repeat center;
+  padding: 0.61333rem 0.66667rem;
+}
+
+.banner h1 {
+  width: 2.16rem;
+  height: 0.66667rem;
+  text-indent: -9999px;
+}
+
+/*省份*/
+.province {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 0 0.33333rem;
+  margin-bottom: 0.33333rem;
+  /*简介*/
+  /*中国地区*/
+}
+
+.province .intro {
+  width: 100%;
+  height: 2.77333rem;
+  background: url("../images/03/intro.png") no-repeat center;
+  padding: 0.21333rem 0.4rem;
+  font-size: 0.32rem;
+  color: #FFFFFF;
+  line-height: 0.56rem;
+  margin-top: -0.30667rem;
+}
+
+.province .intro p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+.province .hint {
+  font-size: 0.32rem;
+  color: #0066cc;
+  text-align: center;
+}
+
+.province .title {
+  margin-top: 0.74667rem;
+}
+
+.province .title .title-icon {
+  width: 0.50667rem;
+  height: 0.45333rem;
+  background: url("../images/01/arrows_red.png") no-repeat center;
+  float: left;
+  margin-top: 16px;
+}
+
+.province .title .text {
+  font-size: 0.48rem;
+  font-weight: bold;
+  color: #444444;
+  float: left;
+  line-height: 0.89333rem;
+}
+
+.province .title .text strong {
+  color: #0066cc;
+}
+
+.province .title .region {
+  width: 2.13333rem;
+  height: 0.86667rem;
+  float: left;
+  padding: 0.12rem 0.21333rem 0.08rem 0.21333rem;
+  margin-left: 0.37333rem;
+  background: #d3e9ff;
+  border-top-left-radius: 0.42667rem;
+  border-top-right-radius: 0.42667rem;
+  border-bottom-right-radius: 0.42667rem;
+}
+
+.province .title .region .icon {
+  width: 0.32rem;
+  height: 0.42667rem;
+  background: url("../images/01/area.png") no-repeat center;
+  float: left;
+  margin-top: 0.08rem;
+  margin-right: 0.08rem;
+}
+
+.province .title .region span {
+  font-size: 0.32rem;
+  color: #0066cc;
+  float: left;
+  line-height: 0.6rem;
+}
+
+.province .cn-area {
+  width: 9.26667rem;
+  padding: 0.37333rem 0;
+}
+
+.province .cn-area .area-item {
+  margin-top: 0.16rem;
+}
+
+.province .cn-area .area-item .key {
+  font-size: 0.4rem;
+  padding-right: 0.26667rem;
+  border-right: 1px dotted #454545;
+  line-height: 0.37333rem;
+  float: left;
+  margin-top: 0.10667rem;
+}
+
+.province .cn-area .area-item .values {
+  width: 88%;
+  float: left;
+}
+
+.province .cn-area .area-item .values a {
+  font-size: 0.32rem;
+  margin-left: 0.26667rem;
+  margin-bottom: 0.24rem;
+  padding: 0 0.32rem;
+  background: #f1f1f1;
+  line-height: 0.6rem;
+  border-radius: 0.16rem;
+  color: #666666;
+  float: left;
+}
+
+.province .cn-area .area-item .values a:hover {
+  background: #1975d2;
+  color: #FFFFFF;
+}
+
+.tables {
+  background: #FFFFFF;
+  padding: 0 0.33333rem 0.66667rem;
+  margin-bottom: 5.66667rem;
+}
+
+.tables .table {
+  padding-top: 0.73333rem;
+}
+
+.tables .table .table-title {
+  line-height: 0.45333rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.21333rem;
+}
+
+.tables .table .table-title .icon {
+  width: 0.32rem;
+  height: 0.45333rem;
+  background: url("../images/01/area.png") no-repeat center;
+}
+
+.tables .table .table-title span {
+  font-size: 0.45333rem;
+  color: #1975d2;
+  margin-left: 0.18667rem;
+}
+
+.tables .table .table-body {
+  font-size: 0.34667rem;
+  line-height: 0.90667rem;
+}
+
+.tables .table .table-body .th {
+  color: #FFFFFF;
+  background: #1975d2;
+  text-align: center;
+}
+
+.tables .table .table-body .tr {
+  color: #444444;
+  border-left: 1px solid #1975d2;
+  border-right: 1px solid #1975d2;
+  border-bottom: 1px solid #1975d2;
+  padding: 0 0.26667rem;
+}
+
+/*高考工具箱*/
+.kit {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 0.13333rem 0 0 0;
+  position: fixed;
+  bottom: 0;
+}
+
+.kit .kit-content {
+  padding: 0 0.33333rem;
+}
+
+.kit .kit-content .cont-left {
+  float: left;
+}
+
+.kit .kit-content .cont-left .title .title-icon {
+  width: 0.50667rem;
+  height: 0.45333rem;
+  background: url("../images/01/arrows_red.png") no-repeat center;
+  float: left;
+  margin-top: 16px;
+}
+
+.kit .kit-content .cont-left .title .text {
+  font-size: 0.48rem;
+  font-weight: bold;
+  color: #444444;
+  float: left;
+  line-height: 0.89333rem;
+}
+
+.kit .kit-content .cont-left .kit-detail {
+  margin-top: 0.37333rem;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item {
+  width: 2rem;
+  border-right: 1px solid #dddddd;
+  float: left;
+  text-align: center;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item .icon {
+  width: 0.88rem;
+  height: 0.88rem;
+  background: url("../images/01/kit_cont_1.png") no-repeat center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item span {
+  color: #444444;
+  font-size: 0.34667rem;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(2) .icon {
+  background: url("../images/01/kit_cont_2.png") no-repeat center;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(3) .icon {
+  background: url("../images/01/kit_cont_3.png") no-repeat center;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item:last-child {
+  border-right: none;
+}
+
+.kit .kit-content .QR-code {
+  float: right;
+  width: 2.05333rem;
+  height: 3.25333rem;
+  background: url("../images/01/QR_code.png") no-repeat center;
+  margin-right: -0.13333rem;
+  padding: 0 0.16rem;
+}
+
+.kit .kit-content .QR-code .wechat {
+  width: 1.70667rem;
+  height: 1.70667rem;
+  background: url("../images/01/wechat.png") no-repeat center;
+  margin-top: 1.09333rem;
+}
+
+.kit .nav {
+  padding: 0 0.33333rem;
+  margin: 0.13333rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 2.82667rem);
+  grid-row-gap: 20px;
+  grid-column-gap: 28px;
+}
+
+.kit .nav .nav-item {
+  width: 2.82667rem;
+  line-height: 0.66667rem;
+  font-size: 0.34667rem;
+  color: #444444;
+  background: #daedff;
+  text-align: center;
+  border-radius: 0.08rem;
+}
+
+.footer {
+  height: 1.6rem;
+  background: #2e2e2e;
+  text-align: center;
+  font-size: 0.29333rem;
+  color: #888888;
+  line-height: 0.50667rem;
+  padding: 0.29333rem 0;
+  display: none;
+  margin-top: 0.26667rem;
+}

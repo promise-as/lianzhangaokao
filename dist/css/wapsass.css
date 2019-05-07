@@ -76,14 +76,6 @@ select {
   max-width: 10rem;
   margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 1.30667rem;
+  padding-bottom: 1.6rem;
   position: relative;
-}
-
-.wrap .bottom {
-  height: 6.4rem;
-  width: 100%;
-  background: #000;
-  position: fixed;
-  bottom: 0;
 }
