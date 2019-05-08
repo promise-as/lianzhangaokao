@@ -1,6 +1,7 @@
 "use strict";
 
 $(function () {
+  // 监听滚动
   $(window).scroll(function () {
     var scrollTop = $(this).scrollTop();
     var scrollHeight = $(document).height();
@@ -12,5 +13,12 @@ $(function () {
     } else {
       $(".kit .footer").stop(true, true).slideUp();
     }
+  });
+
+  // 调整 td 的高度
+  $(".tr").each(function () {
+    // 取父容器 tr 的高度赋值给孩子 td 的高度
+
+    $(this).children().outerHeight($(this).outerHeight(true));
   });
 });

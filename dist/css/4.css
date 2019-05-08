@@ -81,85 +81,55 @@ select {
   position: relative;
 }
 
-.banner {
-  width: 100%;
-  height: 6.86667rem;
-  background: url("../images/01/banner.png") no-repeat center;
+.header {
+  background: #4077d9;
 }
 
-.banner h1 {
-  text-indent: -9999px;
-  padding-top: 0.61333rem;
-  margin-left: 0.66667rem;
+.header h1 {
+  padding: 0.32rem 0;
 }
 
-.banner h1 a {
+.header h1 .logo {
   width: 2.16rem;
   height: 0.66667rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../images/02/logo.png") no-repeat center;
+  text-indent: -9999px;
+}
+
+.banner {
+  height: 6rem;
+  width: 100%;
+  background: url("../images/04/banner.png") no-repeat center;
+  background-size: cover;
 }
 
 /*省份*/
 .province {
+  padding: 0.58667rem 0.33333rem 0rem;
   margin-bottom: 0.33333rem;
-  /*简介*/
   /*中国地区*/
-}
-
-.province .intro {
-  height: 3.24rem;
-  background: url("../images/01/intro.png") no-repeat center;
-  margin-top: -0.30667rem;
-}
-
-.province .title {
-  margin-top: 0.74667rem;
 }
 
 .province .title .title-icon {
   width: 0.50667rem;
   height: 0.45333rem;
-  background: url("../images/01/arrows.png") no-repeat center;
+  background: url("../images/03/arrows.png") no-repeat center;
   float: left;
-  margin-top: 5px;
+  margin-top: 16px;
 }
 
 .province .title .text {
   font-size: 0.48rem;
   font-weight: bold;
-  color: #444444;
+  color: #0066cc;
   float: left;
-  line-height: 0.6rem;
+  line-height: 0.89333rem;
 }
 
 .province .title .text strong {
   color: #f97f55;
-}
-
-.province .title .region {
-  width: 2.13333rem;
-  float: left;
-  padding: 0 0.21333rem;
-  margin-left: 0.37333rem;
-  background: #ffebe4;
-  border-top-left-radius: 0.42667rem;
-  border-top-right-radius: 0.42667rem;
-  border-bottom-right-radius: 0.42667rem;
-}
-
-.province .title .region .icon {
-  width: 0.32rem;
-  height: 0.42667rem;
-  background: url("../images/01/area.png") no-repeat center;
-  float: left;
-  margin-top: 0.08rem;
-  margin-right: 0.08rem;
-}
-
-.province .title .region span {
-  font-size: 0.32rem;
-  color: #ff7241;
-  float: left;
-  line-height: 0.6rem;
 }
 
 .province .cn-area {
@@ -180,6 +150,10 @@ select {
   margin-top: 0.10667rem;
 }
 
+.province .cn-area .area-item .directly {
+  color: #ff5c14;
+}
+
 .province .cn-area .area-item .values {
   width: 88%;
   float: left;
@@ -198,18 +172,20 @@ select {
 }
 
 .province .cn-area .area-item .values a:hover {
-  background: #ff7647;
+  background: #1975d2;
   color: #FFFFFF;
 }
 
 .tables {
   background: #FFFFFF;
-  padding: 0 0.33333rem 0.66667rem;
+  padding: 0.58667rem 0.33333rem 0.01333rem;
   margin-bottom: 5.41333rem;
 }
 
 .tables .table {
-  padding-top: 0.73333rem;
+  font-size: 0.34667rem;
+  line-height: 0.90667rem;
+  margin-bottom: 0.61333rem;
 }
 
 .tables .table .table-title {
@@ -229,60 +205,92 @@ select {
 .tables .table .table-title .icon {
   width: 0.32rem;
   height: 0.45333rem;
-  background: url("../images/01/area.png") no-repeat center;
+  background: url("../images/03/area.png") no-repeat center;
 }
 
 .tables .table .table-title span {
   font-size: 0.45333rem;
-  color: #ff7d4f;
+  color: #1975d2;
   margin-left: 0.18667rem;
 }
 
 .tables .table .tb {
-  line-height: 0.90667rem;
-}
-
-.tables .table .tb .th {
-  color: #FFFFFF;
-  background: #ff7d4f;
-  text-align: center;
-  font-size: 0.34667rem;
+  border: 1px solid #427be0;
 }
 
 .tables .table .tb .tr {
   color: #444444;
-  border-left: 1px solid #ff7d4f;
-  border-right: 1px solid #ff7d4f;
-  border-bottom: 1px solid #ff7d4f;
-  padding: 0 0.26667rem;
-  font-size: 0.34667rem;
+  font-size: 0.32rem;
+  text-align: center;
 }
 
-.tables .table .tb .tac {
-  text-align: center;
+.tables .table .tb .tr .td {
+  width: 67%;
+  float: left;
+  background: #FFFFFF;
+  padding: 0.13333rem 0.18667rem 0.13333rem 0.32rem;
+  min-height: 0.90667rem;
+  line-height: 0.6rem;
+  border-top: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+
+.tables .table .tb .tr .td a {
+  color: #1181f2;
+}
+
+.tables .table .tb .tr .td:nth-of-type(odd) {
+  width: 33%;
+  background: #1975d2;
+  color: #FFFFFF;
+}
+
+.tables .table .tb .tr .tcl {
+  text-align: left;
+}
+
+.tables .table .tb .tr:nth-of-type(even) .td:nth-of-type(even) {
+  background: #e8f1fa;
+  color: #1181f2;
+}
+
+.tables .table .tb .tr:last-child {
+  border-bottom: 1px solid #FFFFFF;
 }
 
 /*高考工具箱*/
 .kit .kit-content .cont-left .title .title-icon {
-  background: url("../images/01/arrows.png") no-repeat center;
+  background: url("../images/03/arrows.png") no-repeat center;
 }
 
 .kit .kit-content .cont-left .kit-detail .detail-item .icon {
-  background: url("../images/01/kit_cont_1.png") no-repeat center;
+  background: url("../images/03/kit_cont_1.png") no-repeat center;
 }
 
 .kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(2) .icon {
-  background: url("../images/01/kit_cont_2.png") no-repeat center;
+  background: url("../images/03/kit_cont_2.png") no-repeat center;
 }
 
 .kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(3) .icon {
-  background: url("../images/01/kit_cont_3.png") no-repeat center;
+  background: url("../images/03/kit_cont_3.png") no-repeat center;
 }
 
 .kit .kit-content .QR-code {
-  background: url("../images/01/QR_code.png") no-repeat center;
+  background: url("../images/03/QR_code.png") no-repeat center;
 }
 
 .kit .nav .nav-item {
-  background: #ffe7df;
+  background: #daedff;
+}
+
+.footer {
+  height: 1.6rem;
+  background: #2e2e2e;
+  text-align: center;
+  font-size: 0.29333rem;
+  color: #888888;
+  line-height: 0.50667rem;
+  padding: 0.29333rem 0;
+  display: none;
 }

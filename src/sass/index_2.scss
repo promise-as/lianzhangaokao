@@ -1,24 +1,8 @@
 @import "wapsass.scss";
 
-.wrap{
-  background: #f0f0f0;
-}
-
-i, a{
-  display: block;
-}
-
-strong{
-  font-style: normal;
-}
-
 .header{
   background: #4077d9;
   h1{
-    //width: pr(162px);
-    //height: pr(50px);
-    //border: 1px solid #cccccc;
-
     padding: pr(24px) 0;
     .logo{
       //border: 1px solid #000;
@@ -34,35 +18,17 @@ strong{
 
 .banner {
   height: pr(508px);
-  width: 100%;
   background: url("../images/02/banner.png") no-repeat center;
   //border: 1px solid #000;
 }
 
 /*省份*/
 .province{
-  width: 100%;
-  //height: pr(965px);
-  background: #FFFFFF;
-  //border: 1px solid blue;
-  padding: 0 pr(25px);
-  //margin-bottom: pr(25px);
   /*简介*/
   .intro{
-    width: 100%;
     height: pr(243px);
     background: url("../images/02/intro.png") no-repeat center;
-    padding: pr(16px) pr(26px);
-    font-size: pr(24px);
-    color: #FFFFFF;
-    line-height: pr(42px);
-    margin-top: pr(-23px);
-    p{
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 5;
-      overflow: hidden;
-    }
+    margin-top: pr(-48px);
   }
   /*批数*/
   .batches{
@@ -78,7 +44,7 @@ strong{
       border: 1px solid #427be0;
       line-height: pr(60px);
       border-radius: pr(30px);
-
+      background: #ecf3ff;
       &:hover{
         background: #427be0;
         color: #FFFFFF;
@@ -117,13 +83,11 @@ strong{
 .tables{
   background: #FFFFFF;
   padding: pr(44px) pr(25px);
-  margin-bottom: pr(425px);
+  margin-bottom: pr(406px);
   .table{
-    //padding-top: pr(55px);
     font-size: pr(26px);
-    line-height: pr(68px);
+    line-height: pr(42px);
     //border: 1px solid #427be0;
-    //border-radius: pr(10px);
     .th{
       width: 100%;
       color: #FFFFFF;
@@ -133,6 +97,10 @@ strong{
         width: 25%;
         float: left;
         background: #427be0;
+        min-height: pr(75px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:first-child{
           border-top-left-radius: pr(10px);
         }
@@ -155,8 +123,17 @@ strong{
         width: 25%;
         float: left;
         background: #FFFFFF;
+        min-height: pr(78px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: pr(18px) pr(0px) pr(18px) pr(6px);
         &:nth-of-type(odd){
           background: #dde9ff;
+          width: 24%;
+        }
+        &:nth-of-type(even){
+          width: 26%;
         }
       }
     }
@@ -165,53 +142,17 @@ strong{
 
 /*高考工具箱*/
 .kit{
-  width: 100%;
-  //height: pr(400px);
-  //border: 1px solid blue;
-  background: #FFFFFF;
-  padding: pr(10px) 0 0 0;
-  position: fixed;
-  bottom: 0;
   .kit-content{
-    padding: 0 pr(25px);
     .cont-left{
-      float: left;
       .title{
-        //border: 1px solid #cccccc;
-        //margin-top: pr(56px);
         .title-icon{
-          width: pr(40px);
-          height: pr(33px);
           background: url("../images/02/title_left.png") no-repeat center;
-          float: left;
-          margin-top: 16px;
-        }
-        .text{
-          font-size: pr(36px);
-          font-weight: bold;
-          color: #444444;
-          float: left;
-          line-height: pr(67px);
         }
       }
       .kit-detail{
-        //border: 1px solid #cccccc;
-        margin-top: pr(28px);
         .detail-item{
-          width: pr(150px);
-          border-right: 1px solid #dddddd;
-          float: left;
-          text-align: center;
           .icon{
-            width: pr(66px);
-            height: pr(66px);
             background: url("../images/02/kit_cont_1.png") no-repeat center;
-            margin-left: auto;
-            margin-right: auto;
-          }
-          span{
-            color: #444444;
-            font-size: pr(26px);
           }
           &:nth-of-type(2){
             .icon{
@@ -223,57 +164,20 @@ strong{
               background: url("../images/02/kit_cont_3.png") no-repeat center;
             }
           }
-          &:last-child{
-            border-right: none;
-          }
         }
       }
     }
     .QR-code{
-      float: right;
-      width: pr(153px);
-      height: pr(251px);
       background: url("../images/02/QR_code.png") no-repeat center;
-      margin-right: pr(-10px);
-      padding: 0 pr(12px);
       .wechat{
-        width: pr(128px);
-        height: pr(128px);
         background: url("../images/01/wechat.png") no-repeat center;
-        margin-top: pr(82px);
       }
     }
   }
   .nav{
-    //border: 1px solid #000;
-    padding: 0 pr(25px);
-    margin: pr(10px) 0;
-    display: grid;
-    grid-template-columns: repeat(3, pr(212px));
-    grid-row-gap: 20px;
-    grid-column-gap: 28px;
     .nav-item{
-      width: pr(212px);
-      line-height: pr(50px);
-      font-size: pr(26px);
-      color: #444444;
       background: #dde9ff;
-      text-align: center;
-      border-radius: pr(6px);
     }
   }
-}
-
-.footer{
-  height: pr(120px);
-  background: #2e2e2e;
-  text-align: center;
-  font-size: pr(22px);
-  color: #888888;
-  line-height: pr(38px);
-  padding: pr(22px) 0;
-
-  display: none;
-  margin-top: pr(20px);
 }
 

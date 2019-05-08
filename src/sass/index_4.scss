@@ -1,85 +1,49 @@
 @import "wapsass.scss";
 
-.banner {
-  height: pr(604px);
-  width: 100%;
-  background: url("../images/03/banner.png") no-repeat center;
+.header{
+  background: #4077d9;
   h1{
-    //border: 1px solid #0066cc;
-    text-indent: -9999px;
-    padding-top: pr(46px);
-    margin-left: pr(50px);
-    a{
+    padding: pr(24px) 0;
+    .logo{
+      //border: 1px solid #000;
       width: pr(162px);
       height: pr(50px);
+      margin-left: auto;
+      margin-right: auto;
+      background: url("../images/02/logo.png") no-repeat center;
+      text-indent: -9999px;
     }
   }
 }
 
+.banner {
+  height: pr(450px);
+  width: 100%;
+  background: url("../images/04/banner.png") no-repeat center;
+  background-size: cover;
+  //border: 1px solid #000;
+}
+
 /*省份*/
 .province{
+  padding: pr(44px) pr(25px) pr(0px);
   margin-bottom: pr(25px);
-  /*简介*/
-  .intro{
-    //border: 1px solid #000;
-    height: pr(208px);
-    background: url("../images/03/intro.png") no-repeat center;
-    margin-top: pr(-64px);
-  }
-
-  .hint{
-    width: 100%;
-    //border: 1px solid #000;
-    font-size: pr(24px);
-    line-height: pr(24px);
-    color: #0066cc;
-    text-align: center;
-    margin-top: pr(24px);
-  }
   .title{
-    //border: 1px solid #cccccc;
-    margin-top: pr(56px);
     .title-icon{
       width: pr(38px);
       height: pr(34px);
       background: url("../images/03/arrows.png") no-repeat center;
       float: left;
-      margin-top: 5px;
+      margin-top: 16px;
     }
     .text{
       font-size: pr(36px);
       font-weight: bold;
-      color: #444444;
+      color: #0066cc;
       float: left;
-      line-height: pr(45px);
+      line-height: pr(67px);
       strong{
-        color: #0066cc;
-      }
-    }
-    .region{
-      width: pr(160px);
-      //height: pr(65px);
-      //border: 1px solid #000;
-      float: left;
-      padding: 0 pr(16px);
-      margin-left: pr(28px);
-      background: #d3e9ff;
-      border-top-left-radius: pr(32px);
-      border-top-right-radius: pr(32px);
-      border-bottom-right-radius: pr(32px);
-      .icon{
-        width: pr(24px);
-        height: pr(32px);
-        background: url("../images/03/area.png") no-repeat center;
-        float: left;
-        margin-top: pr(6px);
-        margin-right: pr(6px);
-      }
-      span{
-        font-size: pr(24px);
-        color: #0066cc;
-        float: left;
-        line-height: pr(45px);
+        color: #f97f55;
       }
     }
   }
@@ -100,6 +64,9 @@
         line-height: pr(28px);
         float: left;
         margin-top: pr(8px);
+      }
+      .directly{
+        color: #ff5c14;
       }
       .values{
         width: 88%;
@@ -127,10 +94,12 @@
 
 .tables{
   background: #FFFFFF;
-  padding: 0 pr(25px) pr(50px);
+  padding: pr(44px) pr(25px) pr(1px);
   margin-bottom: pr(406px);
   .table{
-    padding-top: pr(55px);
+    font-size: pr(26px);
+    line-height: pr(68px);
+    margin-bottom: pr(46px);
     .table-title{
       //border: 1px solid #000;
       line-height: pr(34px);
@@ -150,27 +119,53 @@
       }
     }
     .tb{
-      font-size: pr(26px);
-      line-height: pr(68px);
-      //border: 1px solid #000;
-      .th{
-        background: #1975d2;
-        color: #FFFFFF;
-        text-align: center;
-      }
+      border: 1px solid #427be0;
       .tr{
         color: #444444;
-        border-left: 1px solid #1975d2;
-        border-right: 1px solid #1975d2;
-        border-bottom: 1px solid #1975d2;
-        padding: 0 pr(20px);
+        font-size: pr(24px);
+        text-align: center;
+        .td{
+          width: 67%;
+          float: left;
+          background: #FFFFFF;
+          padding: pr(10px) pr(14px) pr(10px) pr(24px);
+          min-height: pr(68px);
+          line-height: pr(45px);
+          border-top: 1px solid #FFFFFF;
+          border-left: 1px solid #FFFFFF;
+          border-right: 1px solid #FFFFFF;
+          a{
+            color: #1181f2;
+          }
+          &:nth-of-type(odd){
+            width: 33%;
+            background: #1975d2;
+            color: #FFFFFF;
+          }
+        }
+        .tcl{
+          text-align: left;
+        }
+        &:nth-of-type(even){
+          .td{
+            &:nth-of-type(even){
+              background: #e8f1fa;
+              color: #1181f2;
+            }
+          }
+        }
+        &:last-child{
+          border-bottom: 1px solid #FFFFFF;
+        }
       }
     }
+
   }
 }
 
 /*高考工具箱*/
 .kit{
+
   .kit-content{
     .cont-left{
       .title{
@@ -179,7 +174,9 @@
         }
       }
       .kit-detail{
+
         .detail-item{
+
           .icon{
             background: url("../images/03/kit_cont_1.png") no-repeat center;
           }
@@ -205,5 +202,17 @@
       background: #daedff;
     }
   }
+}
+
+.footer{
+  height: pr(120px);
+  background: #2e2e2e;
+  text-align: center;
+  font-size: pr(22px);
+  color: #888888;
+  line-height: pr(38px);
+  padding: pr(22px) 0;
+
+  display: none;
 }
 

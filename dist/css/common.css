@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* author: yzp */
+html {
+  font-size: 75px;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p, h3, h1, h2, h4, h5 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a, button, input {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  padding: 0;
+}
+
+i {
+  font-style: normal;
+}
+
+input[type='submit'], select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select {
+  background-size: 0.25333rem 0.13333rem;
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 10rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 1.6rem;
+  position: relative;
+}
+
+/* base to wapsass.scss */
+.wrap {
+  background: #f0f0f0;
+}
+
+i, a {
+  display: block;
+}
+
+strong {
+  font-style: normal;
+}
+
+/*省份*/
+.province {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 0 0.33333rem;
+  /*简介*/
+}
+
+.province .intro {
+  width: 100%;
+  padding: 0.21333rem 0.29333rem;
+  font-size: 0.32rem;
+  color: #FFFFFF;
+  line-height: 0.56rem;
+}
+
+.province .intro p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+.province .intro p strong {
+  font-weight: bold;
+}
+
+/*高考工具箱*/
+.kit {
+  width: 100%;
+  max-width: 10rem;
+  background: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+}
+
+.kit .kit-content .cont-left {
+  width: 7.73333rem;
+  float: left;
+  margin-top: 0.26667rem;
+}
+
+.kit .kit-content .cont-left .title {
+  margin-left: 0.33333rem;
+}
+
+.kit .kit-content .cont-left .title .title-icon {
+  width: 0.50667rem;
+  height: 0.45333rem;
+  float: left;
+  margin-top: 16px;
+}
+
+.kit .kit-content .cont-left .title .text {
+  font-size: 0.48rem;
+  font-weight: bold;
+  color: #444444;
+  float: left;
+  line-height: 0.89333rem;
+}
+
+.kit .kit-content .cont-left .kit-detail {
+  margin-top: 0.37333rem;
+  text-align: center;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item {
+  width: 2.32rem;
+  border-right: 1px solid #dddddd;
+  float: left;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item .icon {
+  width: 0.88rem;
+  height: 0.88rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item span {
+  color: #444444;
+  font-size: 0.34667rem;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(2) {
+  width: 2.74667rem;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(3) {
+  width: 2.61333rem;
+}
+
+.kit .kit-content .cont-left .kit-detail .detail-item:last-child {
+  border-right: none;
+}
+
+.kit .kit-content .QR-code {
+  float: right;
+  width: 2.05333rem;
+  height: 3.34667rem;
+  margin-right: 0.2rem;
+  padding: 0 0.16rem;
+}
+
+.kit .kit-content .QR-code .wechat {
+  width: 1.70667rem;
+  height: 1.70667rem;
+  background: url("../images/01/wechat.png") no-repeat center;
+  margin-top: 1.09333rem;
+}
+
+.kit .nav {
+  padding: 0.13333rem 0.33333rem;
+  display: grid;
+  grid-template-columns: repeat(3, 2.82667rem);
+  grid-row-gap: 0.13333rem;
+  grid-column-gap: 0.37333rem;
+}
+
+.kit .nav .nav-item {
+  width: 2.82667rem;
+  line-height: 0.66667rem;
+  font-size: 0.34667rem;
+  color: #444444;
+  text-align: center;
+  border-radius: 0.08rem;
+}
+
+.footer {
+  height: 1.6rem;
+  background: #2e2e2e;
+  text-align: center;
+  font-size: 0.29333rem;
+  color: #888888;
+  line-height: 0.50667rem;
+  padding: 0.29333rem 0;
+  display: none;
+}

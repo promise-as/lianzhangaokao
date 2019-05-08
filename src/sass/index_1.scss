@@ -1,85 +1,63 @@
 @import "wapsass.scss";
 
-.wrap{
-  background: #f0f0f0;
-}
-
-i, a{
-  display: block;
-}
-
-strong{
-  font-style: normal;
-}
-
 .banner {
-  height: pr(515px);
   width: 100%;
-  background: url("../images/01/banner_red.png") no-repeat center;
-  padding: pr(46px) pr(50px);
+  height: pr(515px);
+  background: url("../images/01/banner.png") no-repeat center;
+  //border: 1px solid #000;
   h1{
-    width: pr(162px);
-    height: pr(50px);
-    //border: 1px solid #000;
     text-indent: -9999px;
+    padding-top: pr(46px);
+    margin-left: pr(50px);
+    a{
+      width: pr(162px);
+      height: pr(50px);
+    }
   }
 }
 
 /*省份*/
-.province{
-  width: 100%;
-  //height: pr(965px);
-  background: #FFFFFF;
-  //border: 1px solid #000;
-  padding: 0 pr(25px);
+.province {
   margin-bottom: pr(25px);
   /*简介*/
-  .intro{
-    //border: 1px solid #000;
-    width: 100%;
+  .intro {
+    //border: 1px solid blue;
     height: pr(243px);
     background: url("../images/01/intro.png") no-repeat center;
-    padding: pr(16px) pr(36px);
-    font-size: pr(24px);
-    color: #FFFFFF;
-    line-height: pr(42px);
     margin-top: pr(-23px);
-    //@extend %one;
-    p{
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 5;
-      overflow: hidden;
-    }
   }
-  .title{
+  .title {
     //border: 1px solid #cccccc;
     margin-top: pr(56px);
-    .title-icon{
+    .title-icon {
       width: pr(38px);
       height: pr(34px);
-      background: url("../images/01/arrows_red.png") no-repeat center;
+      background: url("../images/01/arrows.png") no-repeat center;
       float: left;
-      margin-top: 16px;
+      margin-top: 5px;
     }
-    .text{
+    .text {
       font-size: pr(36px);
       font-weight: bold;
       color: #444444;
       float: left;
-      line-height: pr(67px);
-      strong{
+      line-height: pr(45px);
+      strong {
         color: #f97f55;
       }
     }
-    .region{
+    .region {
       width: pr(160px);
-      height: pr(65px);
+      //height: pr(65px);
       //border: 1px solid #000;
       float: left;
-      padding: pr(9px) pr(16px) pr(6px) pr(16px);
+      padding: 0 pr(16px);
       margin-left: pr(28px);
-      .icon{
+      background: #ffebe4;
+      border-top-left-radius: pr(32px);
+      border-top-right-radius: pr(32px);
+      border-bottom-right-radius: pr(32px);
+      .icon {
         width: pr(24px);
         height: pr(32px);
         background: url("../images/01/area.png") no-repeat center;
@@ -87,7 +65,7 @@ strong{
         margin-top: pr(6px);
         margin-right: pr(6px);
       }
-      span{
+      span {
         font-size: pr(24px);
         color: #ff7241;
         float: left;
@@ -97,15 +75,15 @@ strong{
   }
 
   /*中国地区*/
-  .cn-area{
+  .cn-area {
     width: pr(695px);
     //height: pr(607px);
     //border: 1px solid #cccccc;
     padding: pr(28px) 0;
-    .area-item{
+    .area-item {
       //border: 1px solid red;
       margin-top: pr(12px);
-      .key{
+      .key {
         font-size: pr(30px);
         padding-right: pr(20px);
         border-right: 1px dotted #454545;
@@ -113,10 +91,10 @@ strong{
         float: left;
         margin-top: pr(8px);
       }
-      .values{
+      .values {
         width: 88%;
         float: left;
-        a{
+        a {
           font-size: pr(24px);
           margin-left: pr(20px);
           margin-bottom: pr(18px);
@@ -127,7 +105,7 @@ strong{
           //border: 1px solid #000;
           color: #666666;
           float: left;
-          &:hover{
+          &:hover {
             background: #ff7647;
             color: #FFFFFF;
           }
@@ -137,160 +115,91 @@ strong{
   }
 }
 
-.tables{
+.tables {
   background: #FFFFFF;
   padding: 0 pr(25px) pr(50px);
-  margin-bottom: pr(425px);
-  .table{
+  margin-bottom: pr(406px);
+  .table {
     padding-top: pr(55px);
-    .table-title{
+    .table-title {
       //border: 1px solid #000;
       line-height: pr(34px);
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: pr(16px);
-      .icon{
+      .icon {
         width: pr(24px);
         height: pr(34px);
         background: url("../images/01/area.png") no-repeat center;
       }
-      span{
+      span {
         font-size: pr(34px);
         color: #ff7d4f;
         margin-left: pr(14px);
       }
     }
-    .table-body{
-      font-size: pr(26px);
+    .tb {
+      //font-size: pr(26px);
       line-height: pr(68px);
-      .th{
+      .th {
         color: #FFFFFF;
         background: #ff7d4f;
         text-align: center;
+        font-size: pr(26px);
       }
-      .tr{
+      .tr {
         color: #444444;
         border-left: 1px solid #ff7d4f;
         border-right: 1px solid #ff7d4f;
         border-bottom: 1px solid #ff7d4f;
         padding: 0 pr(20px);
+        font-size: pr(26px);
+      }
+      .tac {
+        text-align: center;
       }
     }
   }
 }
 
 /*高考工具箱*/
-.kit{
-  width: 100%;
-  //height: pr(400px);
-  //border: 1px solid blue;
-  background: #FFFFFF;
-  padding: pr(10px) 0 0 0;
-  position: fixed;
-  bottom: 0;
-  .kit-content{
-    padding: 0 pr(25px);
-    .cont-left{
-      float: left;
-      .title{
+.kit {
+  .kit-content {
+    .cont-left {
+      //border: 1px solid #000;
+      .title {
         //border: 1px solid #cccccc;
-        //margin-top: pr(56px);
-        .title-icon{
-          width: pr(38px);
-          height: pr(34px);
-          background: url("../images/01/arrows_red.png") no-repeat center;
-          float: left;
-          margin-top: 16px;
-        }
-        .text{
-          font-size: pr(36px);
-          font-weight: bold;
-          color: #444444;
-          float: left;
-          line-height: pr(67px);
+        .title-icon {
+          background: url("../images/01/arrows.png") no-repeat center;
         }
       }
-      .kit-detail{
-        //border: 1px solid #cccccc;
-        margin-top: pr(28px);
-        .detail-item{
-          width: pr(150px);
-          border-right: 1px solid #dddddd;
-          float: left;
-          text-align: center;
-          .icon{
-            width: pr(66px);
-            height: pr(66px);
+      .kit-detail {
+        .detail-item {
+          .icon {
             background: url("../images/01/kit_cont_1.png") no-repeat center;
-            margin-left: auto;
-            margin-right: auto;
           }
-          span{
-            color: #444444;
-            font-size: pr(26px);
-          }
-          &:nth-of-type(2){
-            .icon{
+          &:nth-of-type(2) {
+            .icon {
               background: url("../images/01/kit_cont_2.png") no-repeat center;
             }
           }
-          &:nth-of-type(3){
-            .icon{
+          &:nth-of-type(3) {
+            .icon {
               background: url("../images/01/kit_cont_3.png") no-repeat center;
             }
-          }
-          &:last-child{
-            border-right: none;
           }
         }
       }
     }
-    .QR-code{
-      float: right;
-      width: pr(154px);
-      height: pr(244px);
+    .QR-code {
       background: url("../images/01/QR_code.png") no-repeat center;
-      margin-right: pr(-10px);
-      padding: 0 pr(12px);
-      .wechat{
-        width: pr(128px);
-        height: pr(128px);
-        background: url("../images/01/wechat.png") no-repeat center;
-        margin-top: pr(82px);
-      }
     }
   }
-  .nav{
-    //border: 1px solid #000;
-    padding: 0 pr(25px);
-    margin: pr(10px) 0;
-    display: grid;
-    grid-template-columns: repeat(3, pr(212px));
-    grid-row-gap: 20px;
-    grid-column-gap: 28px;
-    .nav-item{
-      width: pr(212px);
-      line-height: pr(50px);
-      font-size: pr(26px);
-      color: #444444;
+  .nav {
+    .nav-item {
       background: #ffe7df;
-      text-align: center;
-      border-radius: pr(6px);
     }
   }
-}
-
-.footer{
-  height: pr(120px);
-  background: #2e2e2e;
-  text-align: center;
-  font-size: pr(22px);
-  color: #888888;
-  line-height: pr(38px);
-  padding: pr(22px) 0;
-
-  display: none;
-  margin-top: pr(20px);
 }
 

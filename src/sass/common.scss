@@ -1,0 +1,151 @@
+@import "wapsass.scss";
+
+/* base to wapsass.scss */
+.wrap{
+  background: #f0f0f0;
+}
+
+i, a{
+  display: block;
+}
+
+strong{
+  font-style: normal;
+}
+
+/*省份*/
+.province{
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 0 pr(25px);
+  /*简介*/
+  .intro{
+    //border: 1px solid blue;
+    width: 100%;
+
+    padding: pr(16px) pr(22px);
+    font-size: pr(24px);
+    color: #FFFFFF;
+    line-height: pr(42px);
+    p{
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      overflow: hidden;
+      strong{
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/*高考工具箱*/
+.kit{
+  width: 100%;
+  max-width: pr(750px);
+  //border: 1px solid blue;
+  background: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  //box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  .kit-content{
+    .cont-left{
+      width: pr(580px);
+      float: left;
+      //border: 1px solid #000;
+      margin-top: pr(20px);
+      .title{
+        //border: 1px solid #cccccc;
+        margin-left: pr(25px);
+        .title-icon{
+          width: pr(38px);
+          height: pr(34px);
+          float: left;
+          margin-top: 16px;
+        }
+        .text{
+          font-size: pr(36px);
+          font-weight: bold;
+          color: #444444;
+          float: left;
+          line-height: pr(67px);
+        }
+      }
+      .kit-detail{
+        //border: 1px solid #cccccc;
+        margin-top: pr(28px);
+        text-align: center;
+        .detail-item{
+          width: pr(174px);
+          border-right: 1px solid #dddddd;
+          float: left;
+          .icon{
+            width: pr(66px);
+            height: pr(66px);
+            margin-left: auto;
+            margin-right: auto;
+          }
+          span{
+            color: #444444;
+            font-size: pr(26px);
+          }
+          &:nth-of-type(2){
+            width: pr(206px);
+            .icon{
+            }
+          }
+          &:nth-of-type(3){
+            width: pr(196px);
+            .icon{
+            }
+          }
+          &:last-child{
+            border-right: none;
+          }
+        }
+      }
+    }
+    .QR-code{
+      float: right;
+      width: pr(154px);
+      height: pr(251px);
+      margin-right: pr(15px);
+      padding: 0 pr(12px);
+      .wechat{
+        width: pr(128px);
+        height: pr(128px);
+        background: url("../images/01/wechat.png") no-repeat center;
+        margin-top: pr(82px);
+      }
+    }
+  }
+  .nav{
+    //border: 1px solid #000;
+    padding: pr(10px) pr(25px);
+    display: grid;
+    grid-template-columns: repeat(3, pr(212px));
+    grid-row-gap: pr(10px);
+    grid-column-gap: pr(28px);
+    .nav-item{
+      width: pr(212px);
+      line-height: pr(50px);
+      font-size: pr(26px);
+      color: #444444;
+
+      text-align: center;
+      border-radius: pr(6px);
+    }
+  }
+}
+
+.footer{
+  height: pr(120px);
+  background: #2e2e2e;
+  text-align: center;
+  font-size: pr(22px);
+  color: #888888;
+  line-height: pr(38px);
+  padding: pr(22px) 0;
+
+  display: none;
+}
