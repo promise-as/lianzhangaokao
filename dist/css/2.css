@@ -78,7 +78,6 @@ select {
   margin: 0 auto;
   overflow: hidden;
   padding-bottom: 1.6rem;
-  position: relative;
 }
 
 .header {
@@ -95,12 +94,15 @@ select {
   margin-left: auto;
   margin-right: auto;
   background: url("../images/02/logo.png") no-repeat center;
+  background-size: 100%;
   text-indent: -9999px;
 }
 
 .banner {
+  width: 100%;
   height: 6.77333rem;
   background: url("../images/02/banner.png") no-repeat center;
+  background-size: 100%;
 }
 
 /*省份*/
@@ -112,14 +114,15 @@ select {
 .province .intro {
   height: 3.24rem;
   background: url("../images/02/intro.png") no-repeat center;
+  background-size: 100%;
   margin-top: -0.64rem;
 }
 
 .province .batches {
   display: grid;
   grid-template-columns: repeat(4, 2.2rem);
-  grid-row-gap: 20px;
-  grid-column-gap: 16px;
+  grid-row-gap: 0.26667rem;
+  grid-column-gap: 0.21333rem;
   text-align: center;
   margin: 0.56rem 0 1.06667rem 0;
 }
@@ -147,6 +150,7 @@ select {
   width: 0.53333rem;
   height: 0.44rem;
   background: url("../images/02/title_left.png") no-repeat center;
+  background-size: 100%;
   display: inline-block;
   vertical-align: middle;
 }
@@ -163,6 +167,7 @@ select {
   width: 0.53333rem;
   height: 0.42667rem;
   background: url("../images/02/title_right.png") no-repeat center;
+  background-size: 100%;
   display: inline-block;
   vertical-align: middle;
 }
@@ -170,7 +175,6 @@ select {
 .tables {
   background: #FFFFFF;
   padding: 0.58667rem 0.33333rem;
-  margin-bottom: 5.41333rem;
 }
 
 .tables .table {
@@ -248,30 +252,33 @@ select {
 }
 
 /*高考工具箱*/
-.kit .kit-content .cont-left .title .title-icon {
-  background: url("../images/02/title_left.png") no-repeat center;
-}
-
-.kit .kit-content .cont-left .kit-detail .detail-item .icon {
+.kit .kit-detail .detail-item .icon {
   background: url("../images/02/kit_cont_1.png") no-repeat center;
+  background-size: 100%;
 }
 
-.kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(2) .icon {
+.kit .kit-detail .detail-item:nth-of-type(2) .icon {
   background: url("../images/02/kit_cont_2.png") no-repeat center;
+  background-size: 100%;
 }
 
-.kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(3) .icon {
-  background: url("../images/02/kit_cont_3.png") no-repeat center;
+.kit .kit-detail .detail-item:hover {
+  color: #4077d9;
 }
 
-.kit .kit-content .QR-code {
-  background: url("../images/02/QR_code.png") no-repeat center;
+.kit .title {
+  background: #4077d9;
 }
 
-.kit .kit-content .QR-code .wechat {
-  background: url("../images/01/wechat.png") no-repeat center;
+.kit .title .title-icon {
+  background: url("../images/02/title_left.png") no-repeat center;
+  background-size: 100%;
 }
 
 .kit .nav .nav-item {
   background: #dde9ff;
+}
+
+.kit .nav .nav-item:hover {
+  color: #4077d9;
 }

@@ -78,13 +78,13 @@ select {
   margin: 0 auto;
   overflow: hidden;
   padding-bottom: 1.6rem;
-  position: relative;
 }
 
 .banner {
   width: 100%;
   height: 6.86667rem;
   background: url("../images/01/banner.png") no-repeat center;
+  background-size: 100%;
 }
 
 .banner h1 {
@@ -108,6 +108,7 @@ select {
 .province .intro {
   height: 3.24rem;
   background: url("../images/01/intro.png") no-repeat center;
+  background-size: 100%;
   margin-top: -0.30667rem;
 }
 
@@ -119,6 +120,7 @@ select {
   width: 0.50667rem;
   height: 0.45333rem;
   background: url("../images/01/arrows.png") no-repeat center;
+  background-size: 100%;
   float: left;
   margin-top: 5px;
 }
@@ -150,6 +152,7 @@ select {
   width: 0.32rem;
   height: 0.42667rem;
   background: url("../images/01/area.png") no-repeat center;
+  background-size: 100%;
   float: left;
   margin-top: 0.08rem;
   margin-right: 0.08rem;
@@ -205,7 +208,6 @@ select {
 .tables {
   background: #FFFFFF;
   padding: 0 0.33333rem 0.66667rem;
-  margin-bottom: 5.41333rem;
 }
 
 .tables .table {
@@ -230,6 +232,7 @@ select {
   width: 0.32rem;
   height: 0.45333rem;
   background: url("../images/01/area.png") no-repeat center;
+  background-size: 100%;
 }
 
 .tables .table .table-title span {
@@ -263,26 +266,33 @@ select {
 }
 
 /*高考工具箱*/
-.kit .kit-content .cont-left .title .title-icon {
-  background: url("../images/01/arrows.png") no-repeat center;
-}
-
-.kit .kit-content .cont-left .kit-detail .detail-item .icon {
+.kit .kit-detail .detail-item .icon {
   background: url("../images/01/kit_cont_1.png") no-repeat center;
+  background-size: 100%;
 }
 
-.kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(2) .icon {
+.kit .kit-detail .detail-item:nth-of-type(2) .icon {
   background: url("../images/01/kit_cont_2.png") no-repeat center;
+  background-size: 100%;
 }
 
-.kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(3) .icon {
-  background: url("../images/01/kit_cont_3.png") no-repeat center;
+.kit .kit-detail .detail-item:hover {
+  color: #ff7d4f;
 }
 
-.kit .kit-content .QR-code {
-  background: url("../images/01/QR_code.png") no-repeat center;
+.kit .title {
+  background: #ff7d4f;
+}
+
+.kit .title .title-icon {
+  background: url("../images/01/arrows.png") no-repeat center;
+  background-size: 100%;
 }
 
 .kit .nav .nav-item {
   background: #ffe7df;
+}
+
+.kit .nav .nav-item:hover {
+  color: #ff7d4f;
 }

@@ -87,7 +87,7 @@ gulp.task('watch', ['default'], function () {
   });
   // 打开网页
   // open("http://localhost:4000");
-  open("192.168.30.76:5000/index_1.html");
+  open("192.168.30.76:5000/1.html");
   // open("http://192.168.123.74:5000");
   // 配置监视任务
   gulp.watch('./src/js/*.js', ['minifyjs']);

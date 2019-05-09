@@ -11,6 +11,7 @@
       margin-left: auto;
       margin-right: auto;
       background: url("../images/02/logo.png") no-repeat center;
+      background-size: 100%;
       text-indent: -9999px;
     }
   }
@@ -20,7 +21,7 @@
   height: pr(450px);
   width: 100%;
   background: url("../images/04/banner.png") no-repeat center;
-  background-size: cover;
+  background-size: 100%;
   //border: 1px solid #000;
 }
 
@@ -33,6 +34,7 @@
       width: pr(38px);
       height: pr(34px);
       background: url("../images/03/arrows.png") no-repeat center;
+      background-size: 100%;
       float: left;
       margin-top: 16px;
     }
@@ -95,7 +97,6 @@
 .tables{
   background: #FFFFFF;
   padding: pr(44px) pr(25px) pr(1px);
-  margin-bottom: pr(406px);
   .table{
     font-size: pr(26px);
     line-height: pr(68px);
@@ -111,6 +112,7 @@
         width: pr(24px);
         height: pr(34px);
         background: url("../images/03/area.png") no-repeat center;
+        background-size: 100%;
       }
       span{
         font-size: pr(34px);
@@ -165,41 +167,36 @@
 
 /*高考工具箱*/
 .kit{
-
-  .kit-content{
-    .cont-left{
-      .title{
-        .title-icon{
-          background: url("../images/03/arrows.png") no-repeat center;
+  .kit-detail{
+    .detail-item{
+      .icon{
+        background: url("../images/03/kit_cont_1.png") no-repeat center;
+        background-size: 100%;
+      }
+      &:nth-of-type(2){
+        .icon{
+          background: url("../images/03/kit_cont_2.png") no-repeat center;
+          background-size: 100%;
         }
       }
-      .kit-detail{
-
-        .detail-item{
-
-          .icon{
-            background: url("../images/03/kit_cont_1.png") no-repeat center;
-          }
-          &:nth-of-type(2){
-            .icon{
-              background: url("../images/03/kit_cont_2.png") no-repeat center;
-            }
-          }
-          &:nth-of-type(3){
-            .icon{
-              background: url("../images/03/kit_cont_3.png") no-repeat center;
-            }
-          }
-        }
+      &:hover{
+        color: #0066cc;
       }
     }
-    .QR-code{
-      background: url("../images/03/QR_code.png") no-repeat center;
+  }
+  .title{
+    background: #0066cc;
+    .title-icon{
+      background: url("../images/03/arrows.png") no-repeat center;
+      background-size: 100%;
     }
   }
   .nav{
     .nav-item{
       background: #daedff;
+      &:hover{
+        color: #0066cc;
+      }
     }
   }
 }

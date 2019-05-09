@@ -1,0 +1,130 @@
+@import "wapsass.scss";
+
+/* base to wapsass.scss */
+.wrap{
+  background: #f0f0f0;
+}
+
+i, a{
+  display: block;
+}
+
+strong{
+  font-style: normal;
+}
+
+/*省份*/
+.province{
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 0 pr(25px);
+  /*简介*/
+  .intro{
+    //border: 1px solid blue;
+    width: 100%;
+
+    padding: pr(16px) pr(22px);
+    font-size: pr(24px);
+    color: #FFFFFF;
+    line-height: pr(42px);
+    p{
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      overflow: hidden;
+      strong{
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.tables{
+  margin-bottom: pr(300px);
+}
+
+/*高考工具箱*/
+.kit{
+  width: 100%;
+  max-width: pr(750px);
+  //border: 1px solid blue;
+  background: #f9f9f9;
+  position: fixed;
+  bottom: 0;
+  .kit-content{
+    margin-top: pr(10px);
+    margin-right: pr(30px);
+    .kit-detail{
+      width: 54%;
+      float: left;
+      padding-top: pr(14px);
+      text-align: center;
+      .detail-item{
+        width: 50%;
+        border-right: 1px solid #dddddd;
+        float: left;
+        font-size: pr(26px);
+        .icon{
+          width: pr(66px);
+          height: pr(66px);
+          margin-left: auto;
+          margin-right: auto;
+        }
+        &:last-child{
+          border-right: none;
+        }
+      }
+    }
+    .title{
+      //border: 1px solid blue;
+      width: 46%;
+      float: right;
+      text-align: center;
+      color: #FFFFFF;
+
+      line-height: pr(36px);
+      padding-bottom: pr(6px);
+      font-size: pr(22px);
+      .title-icon{
+        width: pr(38px);
+        height: pr(34px);
+        float: left;
+        margin-top: 16px;
+      }
+      .text{
+        font-size: pr(26px);
+        line-height: pr(60px);
+      }
+    }
+
+  }
+  .nav{
+    //border: 1px solid #000;
+    padding: pr(10px) pr(25px);
+    display: grid;
+    grid-template-columns: repeat(3, pr(212px));
+    grid-row-gap: pr(10px);
+    grid-column-gap: pr(28px);
+    .nav-item{
+      width: pr(212px);
+      line-height: pr(50px);
+      font-size: pr(26px);
+      color: #444444;
+
+      text-align: center;
+      border-radius: pr(6px);
+    }
+  }
+}
+
+.footer{
+  height: pr(120px);
+  background: #2e2e2e;
+  text-align: center;
+  font-size: pr(22px);
+  color: #888888;
+  line-height: pr(38px);
+  padding: pr(22px) 0;
+
+  display: none;
+}

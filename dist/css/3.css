@@ -78,13 +78,13 @@ select {
   margin: 0 auto;
   overflow: hidden;
   padding-bottom: 1.6rem;
-  position: relative;
 }
 
 .banner {
   height: 8.05333rem;
   width: 100%;
   background: url("../images/03/banner.png") no-repeat center;
+  background-size: 100%;
 }
 
 .banner h1 {
@@ -108,6 +108,7 @@ select {
 .province .intro {
   height: 2.77333rem;
   background: url("../images/03/intro.png") no-repeat center;
+  background-size: 100%;
   margin-top: -0.85333rem;
 }
 
@@ -128,6 +129,7 @@ select {
   width: 0.50667rem;
   height: 0.45333rem;
   background: url("../images/03/arrows.png") no-repeat center;
+  background-size: 100%;
   float: left;
   margin-top: 5px;
 }
@@ -159,6 +161,7 @@ select {
   width: 0.32rem;
   height: 0.42667rem;
   background: url("../images/03/area.png") no-repeat center;
+  background-size: 100%;
   float: left;
   margin-top: 0.08rem;
   margin-right: 0.08rem;
@@ -214,7 +217,6 @@ select {
 .tables {
   background: #FFFFFF;
   padding: 0 0.33333rem 0.66667rem;
-  margin-bottom: 5.41333rem;
 }
 
 .tables .table {
@@ -239,6 +241,7 @@ select {
   width: 0.32rem;
   height: 0.45333rem;
   background: url("../images/03/area.png") no-repeat center;
+  background-size: 100%;
 }
 
 .tables .table .table-title span {
@@ -263,30 +266,37 @@ select {
   border-left: 1px solid #1975d2;
   border-right: 1px solid #1975d2;
   border-bottom: 1px solid #1975d2;
-  padding: 0 0.26667rem;
+  padding: 0 0.06667rem;
 }
 
 /*高考工具箱*/
-.kit .kit-content .cont-left .title .title-icon {
-  background: url("../images/03/arrows.png") no-repeat center;
-}
-
-.kit .kit-content .cont-left .kit-detail .detail-item .icon {
+.kit .kit-detail .detail-item .icon {
   background: url("../images/03/kit_cont_1.png") no-repeat center;
+  background-size: 100%;
 }
 
-.kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(2) .icon {
+.kit .kit-detail .detail-item:nth-of-type(2) .icon {
   background: url("../images/03/kit_cont_2.png") no-repeat center;
+  background-size: 100%;
 }
 
-.kit .kit-content .cont-left .kit-detail .detail-item:nth-of-type(3) .icon {
-  background: url("../images/03/kit_cont_3.png") no-repeat center;
+.kit .kit-detail .detail-item:hover {
+  color: #0066cc;
 }
 
-.kit .kit-content .QR-code {
-  background: url("../images/03/QR_code.png") no-repeat center;
+.kit .title {
+  background: #0066cc;
+}
+
+.kit .title .title-icon {
+  background: url("../images/03/arrows.png") no-repeat center;
+  background-size: 100%;
 }
 
 .kit .nav .nav-item {
   background: #daedff;
+}
+
+.kit .nav .nav-item:hover {
+  color: #0066cc;
 }

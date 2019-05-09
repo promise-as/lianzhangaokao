@@ -4,6 +4,7 @@
   width: 100%;
   height: pr(515px);
   background: url("../images/01/banner.png") no-repeat center;
+  background-size: 100%;
   //border: 1px solid #000;
   h1{
     text-indent: -9999px;
@@ -24,6 +25,7 @@
     //border: 1px solid blue;
     height: pr(243px);
     background: url("../images/01/intro.png") no-repeat center;
+    background-size: 100%;
     margin-top: pr(-23px);
   }
   .title {
@@ -33,6 +35,7 @@
       width: pr(38px);
       height: pr(34px);
       background: url("../images/01/arrows.png") no-repeat center;
+      background-size: 100%;
       float: left;
       margin-top: 5px;
     }
@@ -61,6 +64,7 @@
         width: pr(24px);
         height: pr(32px);
         background: url("../images/01/area.png") no-repeat center;
+        background-size: 100%;
         float: left;
         margin-top: pr(6px);
         margin-right: pr(6px);
@@ -118,7 +122,6 @@
 .tables {
   background: #FFFFFF;
   padding: 0 pr(25px) pr(50px);
-  margin-bottom: pr(406px);
   .table {
     padding-top: pr(55px);
     .table-title {
@@ -132,6 +135,7 @@
         width: pr(24px);
         height: pr(34px);
         background: url("../images/01/area.png") no-repeat center;
+        background-size: 100%;
       }
       span {
         font-size: pr(34px);
@@ -165,40 +169,36 @@
 
 /*高考工具箱*/
 .kit {
-  .kit-content {
-    .cont-left {
-      //border: 1px solid #000;
-      .title {
-        //border: 1px solid #cccccc;
-        .title-icon {
-          background: url("../images/01/arrows.png") no-repeat center;
+  .kit-detail {
+    .detail-item {
+      .icon {
+        background: url("../images/01/kit_cont_1.png") no-repeat center;
+        background-size: 100%;
+      }
+      &:nth-of-type(2) {
+        .icon {
+          background: url("../images/01/kit_cont_2.png") no-repeat center;
+          background-size: 100%;
         }
       }
-      .kit-detail {
-        .detail-item {
-          .icon {
-            background: url("../images/01/kit_cont_1.png") no-repeat center;
-          }
-          &:nth-of-type(2) {
-            .icon {
-              background: url("../images/01/kit_cont_2.png") no-repeat center;
-            }
-          }
-          &:nth-of-type(3) {
-            .icon {
-              background: url("../images/01/kit_cont_3.png") no-repeat center;
-            }
-          }
-        }
+      &:hover{
+        color: #ff7d4f;
       }
     }
-    .QR-code {
-      background: url("../images/01/QR_code.png") no-repeat center;
+  }
+  .title {
+    background: #ff7d4f;
+    .title-icon {
+      background: url("../images/01/arrows.png") no-repeat center;
+      background-size: 100%;
     }
   }
   .nav {
     .nav-item {
       background: #ffe7df;
+      &:hover{
+        color: #ff7d4f;
+      }
     }
   }
 }

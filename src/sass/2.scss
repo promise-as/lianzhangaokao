@@ -11,14 +11,17 @@
       margin-left: auto;
       margin-right: auto;
       background: url("../images/02/logo.png") no-repeat center;
+      background-size: 100%;
       text-indent: -9999px;
     }
   }
 }
 
 .banner {
+  width: 100%;
   height: pr(508px);
   background: url("../images/02/banner.png") no-repeat center;
+  background-size: 100%;
   //border: 1px solid #000;
 }
 
@@ -28,14 +31,15 @@
   .intro{
     height: pr(243px);
     background: url("../images/02/intro.png") no-repeat center;
+    background-size: 100%;
     margin-top: pr(-48px);
   }
   /*批数*/
   .batches{
     display: grid;
     grid-template-columns: repeat(4, pr(165px));
-    grid-row-gap: 20px;
-    grid-column-gap: 16px;
+    grid-row-gap: pr(20px);
+    grid-column-gap: pr(16px);
     text-align: center;
     margin: pr(42px) 0 pr(80px) 0;
     .batch{
@@ -60,6 +64,7 @@
       width: pr(40px);
       height: pr(33px);
       background: url("../images/02/title_left.png") no-repeat center;
+      background-size: 100%;
       display: inline-block;
       vertical-align: middle;
     }
@@ -74,6 +79,7 @@
       width: pr(40px);
       height: pr(32px);
       background: url("../images/02/title_right.png") no-repeat center;
+      background-size: 100%;
       display: inline-block;
       vertical-align: middle;
     }
@@ -83,7 +89,6 @@
 .tables{
   background: #FFFFFF;
   padding: pr(44px) pr(25px);
-  margin-bottom: pr(406px);
   .table{
     font-size: pr(26px);
     line-height: pr(42px);
@@ -142,41 +147,36 @@
 
 /*高考工具箱*/
 .kit{
-  .kit-content{
-    .cont-left{
-      .title{
-        .title-icon{
-          background: url("../images/02/title_left.png") no-repeat center;
+  .kit-detail{
+    .detail-item{
+      .icon{
+        background: url("../images/02/kit_cont_1.png") no-repeat center;
+        background-size: 100%;
+      }
+      &:nth-of-type(2){
+        .icon{
+          background: url("../images/02/kit_cont_2.png") no-repeat center;
+          background-size: 100%;
         }
       }
-      .kit-detail{
-        .detail-item{
-          .icon{
-            background: url("../images/02/kit_cont_1.png") no-repeat center;
-          }
-          &:nth-of-type(2){
-            .icon{
-              background: url("../images/02/kit_cont_2.png") no-repeat center;
-            }
-          }
-          &:nth-of-type(3){
-            .icon{
-              background: url("../images/02/kit_cont_3.png") no-repeat center;
-            }
-          }
-        }
+      &:hover{
+        color: #4077d9;
       }
     }
-    .QR-code{
-      background: url("../images/02/QR_code.png") no-repeat center;
-      .wechat{
-        background: url("../images/01/wechat.png") no-repeat center;
-      }
+  }
+  .title{
+    background: #4077d9;
+    .title-icon{
+      background: url("../images/02/title_left.png") no-repeat center;
+      background-size: 100%;
     }
   }
   .nav{
     .nav-item{
       background: #dde9ff;
+      &:hover{
+        color: #4077d9;
+      }
     }
   }
 }
