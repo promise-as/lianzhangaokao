@@ -252,11 +252,6 @@ select {
   font-size: 0.34667rem;
 }
 
-.tables .table .tb .th a {
-  display: inline-block;
-  color: #FFFFFF;
-}
-
 .tables .table .tb .tr {
   color: #444444;
   border-left: 1px solid #ff7d4f;

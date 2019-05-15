@@ -136,38 +136,17 @@ select {
   background: #ecf3ff;
 }
 
-.province .batches .batch.active {
-  background: #427be0;
-  color: #FFFFFF;
-}
-
 .province .batches .batch:hover {
   background: #427be0;
   color: #FFFFFF;
 }
 
-.tables {
-  background: #FFFFFF;
-  margin-bottom: 4.93333rem;
-  position: relative;
-}
-
-.tables .table {
-  font-size: 0.34667rem;
-  line-height: 0.56rem;
-  background: #FFFFFF;
-  padding: 0 0.33333rem 0.58667rem 0.33333rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-}
-
-.tables .table .title {
+.province .title {
+  margin-top: 0.74667rem;
   text-align: center;
 }
 
-.tables .table .title .left-icon {
+.province .title .left-icon {
   width: 0.53333rem;
   height: 0.44rem;
   background: url("../images/02/title_left.png") no-repeat center;
@@ -176,7 +155,7 @@ select {
   vertical-align: middle;
 }
 
-.tables .table .title .text {
+.province .title .text {
   font-size: 0.45333rem;
   font-weight: bold;
   color: #333333;
@@ -184,7 +163,7 @@ select {
   line-height: 0.89333rem;
 }
 
-.tables .table .title .right-icon {
+.province .title .right-icon {
   width: 0.53333rem;
   height: 0.42667rem;
   background: url("../images/02/title_right.png") no-repeat center;
@@ -193,14 +172,24 @@ select {
   vertical-align: middle;
 }
 
+.tables {
+  background: #FFFFFF;
+  padding: 0.58667rem 0.33333rem;
+}
+
+.tables .table {
+  font-size: 0.34667rem;
+  line-height: 0.56rem;
+}
+
 .tables .table .th {
   width: 100%;
   color: #FFFFFF;
   text-align: center;
-  margin-top: 0.58667rem;
 }
 
 .tables .table .th .td {
+  width: 25%;
   float: left;
   background: #427be0;
   min-height: 1rem;
@@ -219,12 +208,7 @@ select {
   border-top-left-radius: 0.13333rem;
 }
 
-.tables .table .th .td:nth-of-type(odd) {
-  width: 24%;
-}
-
 .tables .table .th .td:nth-of-type(even) {
-  width: 26%;
   background: #578ae5;
 }
 
@@ -265,11 +249,6 @@ select {
 
 .tables .table .tr .td:nth-of-type(even) {
   width: 26%;
-}
-
-.tables .table.active {
-  visibility: visible;
-  z-index: 10;
 }
 
 /*高考工具箱*/

@@ -81,9 +81,9 @@ select {
 }
 
 .banner {
+  height: 8.05333rem;
   width: 100%;
-  height: 6.86667rem;
-  background: url("../images/01/banner.png") no-repeat center;
+  background: url("../images/03/banner.png") no-repeat center;
   background-size: 100%;
 }
 
@@ -106,10 +106,19 @@ select {
 }
 
 .province .intro {
-  height: 3.24rem;
-  background: url("../images/01/intro.png") no-repeat center;
+  height: 2.77333rem;
+  background: url("../images/03/intro.png") no-repeat center;
   background-size: 100%;
-  margin-top: -0.30667rem;
+  margin-top: -0.85333rem;
+}
+
+.province .hint {
+  width: 100%;
+  font-size: 0.32rem;
+  line-height: 0.32rem;
+  color: #0066cc;
+  text-align: center;
+  margin-top: 0.32rem;
 }
 
 .province .title {
@@ -119,7 +128,7 @@ select {
 .province .title .title-icon {
   width: 0.50667rem;
   height: 0.45333rem;
-  background: url("../images/01/arrows.png") no-repeat center;
+  background: url("../images/03/arrows.png") no-repeat center;
   background-size: 100%;
   float: left;
   margin-top: 5px;
@@ -134,7 +143,7 @@ select {
 }
 
 .province .title .text strong {
-  color: #f97f55;
+  color: #0066cc;
 }
 
 .province .title .region {
@@ -142,7 +151,7 @@ select {
   float: left;
   padding: 0 0.21333rem;
   margin-left: 0.37333rem;
-  background: #ffebe4;
+  background: #d3e9ff;
   border-top-left-radius: 0.42667rem;
   border-top-right-radius: 0.42667rem;
   border-bottom-right-radius: 0.42667rem;
@@ -151,7 +160,7 @@ select {
 .province .title .region .icon {
   width: 0.32rem;
   height: 0.42667rem;
-  background: url("../images/01/area.png") no-repeat center;
+  background: url("../images/03/area.png") no-repeat center;
   background-size: 100%;
   float: left;
   margin-top: 0.08rem;
@@ -160,7 +169,7 @@ select {
 
 .province .title .region span {
   font-size: 0.32rem;
-  color: #ff7241;
+  color: #0066cc;
   float: left;
   line-height: 0.6rem;
 }
@@ -201,7 +210,7 @@ select {
 }
 
 .province .cn-area .area-item .values a:hover {
-  background: #ff7647;
+  background: #1975d2;
   color: #FFFFFF;
 }
 
@@ -231,73 +240,63 @@ select {
 .tables .table .table-title .icon {
   width: 0.32rem;
   height: 0.45333rem;
-  background: url("../images/01/area.png") no-repeat center;
+  background: url("../images/03/area.png") no-repeat center;
   background-size: 100%;
 }
 
 .tables .table .table-title span {
   font-size: 0.45333rem;
-  color: #ff7d4f;
+  color: #1975d2;
   margin-left: 0.18667rem;
 }
 
 .tables .table .tb {
+  font-size: 0.34667rem;
   line-height: 0.90667rem;
 }
 
 .tables .table .tb .th {
+  background: #1975d2;
   color: #FFFFFF;
-  background: #ff7d4f;
   text-align: center;
-  font-size: 0.34667rem;
-}
-
-.tables .table .tb .th a {
-  display: inline-block;
-  color: #FFFFFF;
 }
 
 .tables .table .tb .tr {
   color: #444444;
-  border-left: 1px solid #ff7d4f;
-  border-right: 1px solid #ff7d4f;
-  border-bottom: 1px solid #ff7d4f;
-  padding: 0 0.26667rem;
-  font-size: 0.34667rem;
-}
-
-.tables .table .tb .tac {
-  text-align: center;
+  border-left: 1px solid #1975d2;
+  border-right: 1px solid #1975d2;
+  border-bottom: 1px solid #1975d2;
+  padding: 0 0.06667rem;
 }
 
 /*高考工具箱*/
 .kit .kit-detail .detail-item .icon {
-  background: url("../images/01/kit_cont_1.png") no-repeat center;
+  background: url("../images/03/kit_cont_1.png") no-repeat center;
   background-size: 100%;
 }
 
 .kit .kit-detail .detail-item:nth-of-type(2) .icon {
-  background: url("../images/01/kit_cont_2.png") no-repeat center;
+  background: url("../images/03/kit_cont_2.png") no-repeat center;
   background-size: 100%;
 }
 
 .kit .kit-detail .detail-item:hover {
-  color: #ff7d4f;
+  color: #0066cc;
 }
 
 .kit .title {
-  background: #ff7d4f;
+  background: #0066cc;
 }
 
 .kit .title .title-icon {
-  background: url("../images/01/arrows.png") no-repeat center;
+  background: url("../images/03/arrows.png") no-repeat center;
   background-size: 100%;
 }
 
 .kit .nav .nav-item {
-  background: #ffe7df;
+  background: #daedff;
 }
 
 .kit .nav .nav-item:hover {
-  color: #ff7d4f;
+  color: #0066cc;
 }
